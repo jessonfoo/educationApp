@@ -49,6 +49,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 gem 'hirb'
+gem 'faker'
 gem 'awesome_print'
 gem 'bootstrap-sass'
 gem 'omniauth'
