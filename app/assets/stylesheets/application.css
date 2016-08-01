@@ -14,5 +14,19 @@
  *= require_self
  */
 
+<<<<<<< HEAD
 @import "bootstrap-sprockets";
 @import "bootstrap";
+=======
+ body {
+   background: #95D1FB
+ }
+
+ a {
+   color: #FFF;
+
+   &:hover {
+     text-decoration: none;
+   }
+ }
+>>>>>>> Homepage
