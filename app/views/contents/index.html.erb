@@ -34,7 +34,7 @@
   $(document).ready(function(){
     $('.content-slide:first').toggleClass('active').toggleClass('hidden');
     var active = $('.content-slide.active').attr('data-content-id');
-    $('.link-slide["data-content-id"='+ active + ']');
+    $(".link-slide .content_id-"+ active);
   })
 </script>
 <style>
