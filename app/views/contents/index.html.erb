@@ -11,7 +11,12 @@
 
   <tbody>
     <% @contents.shuffle.each do |content| %>
-      <div data-content-id="<%= content.id %>" class="content_id-<%= content.id %> content-slide hidden">
+      <div data-content-id="<%= content.id %>" class="content_id-<%= content.id %> content-slide hidden" style="text-align:center;">
+    <% @links.each do |link| %>
+      <% if link.content_id == content %>
+        <a data-content-id="<%= link.content_id%>" class="link-slide content_id-<%= link.content_id%> " href="<%= link.url%>"><%= link.title %></a>
+      <% end %>
+    <% end %>
         <h3><%= content.title %></h3>
         <h3><%= content.category %></h3>
         <img src="<%= content.url %>" >
@@ -26,9 +31,6 @@
 
 <br>
 
-    <% @links.each do |link| %>
-      <a data-content-id="<%= link.content_id%>" class="link-slide content_id-<%= link.content_id%> " href="<%= link.url%>"><%= link.title %></a>
-    <% end %>
 <%= link_to 'New Content', new_content_path %>
 <script>
   $(document).ready(function(){
@@ -45,5 +47,6 @@ button.stumble-next{
   border: none;
   color: white;
 }
+.link-slide
 }
 </style>
