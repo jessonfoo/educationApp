@@ -1,3 +1,35 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background: #95D1FB
+}
+
+h1 {
+  color: white;
+  font-family: 'Raleway', sans-serif; font-weight: 400;
+  text-align: center;
+  font-size: 200px;
+}
+
+span {
+  color: #B7612C;
+  font-family: 'Raleway', sans-serif; font-weight: 700;
+}
+
+#para {
+  font-family: 'Raleway', sans-serif; font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-left: 250px;
+  color:#1B78C8
+}
+
+a {
+  color: #FFF;
+
+  &:hover {
+    text-decoration: none;
+    border-style: none;
+  }
+}
