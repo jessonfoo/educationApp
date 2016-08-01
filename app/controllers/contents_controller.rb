@@ -3,6 +3,7 @@ class ContentsController < ApplicationController
 
   def index
     @contents = Content.all
+    @links = Link.all
   end
 
   def show
@@ -55,6 +56,13 @@ class ContentsController < ApplicationController
     end
 
     def content_params
-      params.require(:content).permit(:title, :url)
+      params.require(:content).permit!
     end
+    # def set_link
+    #   @link = Link.find(params[:id])
+    # end
+    #
+    # def link_params
+    #   params.require(:link).permit!
+    # end
 end

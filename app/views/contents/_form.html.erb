@@ -17,11 +17,13 @@
   </div>
 
   <div class="field">
-    <%= f.label :url %>
-    <%= f.text_field :url %>
+    <%= f.hidden_field :url%>
   </div>
 
   <div class="actions">
+    <input type="filepicker" data-fp-apikey="ApoN20O3TACrtsYnFGrWIz" onchange="$('#content_url').attr('value',event.fpfile.url)">
     <%= f.submit %>
   </div>
+  <script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
+  
 <% end %>

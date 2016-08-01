@@ -27,6 +27,9 @@
 
 <br>
 
+    <% @links.each do |link| %>
+      <a href="<%= link.url%>"><%= link.title %></a>
+    <% end %>
 <%= link_to 'New Content', new_content_path %>
 <script>
   $(document).ready(function(){
