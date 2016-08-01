@@ -10,28 +10,31 @@
   </thead>
 
   <div class="container" style="text-align:center;">
-    <% @contents.shuffle.each do |content| %>
-      <div data-content-id="<%= content.id %>" class="content_id-<%= content.id %> content-slide hidden" style="text-align:center;">
-    <% @links.each do |link| %>
-      <% if link.content_id == content %>
-        <a data-content-id="<%= link.content_id%>" class="link-slide content_id-<%= link.content_id%> " href="<%= link.url%>"><%= link.title %></a>
+    <div class="row-fluid">
+    <div class="col-xs-6">
+      <% @contents.shuffle.each do |content| %>
+        <div data-content-id="<%= content.id %>" class="content_id-<%= content.id %> content-slide hidden" style="text-align:center;">
+      <% @links.each do |link| %>
+        <% if link.content_id == content %>
+          <a data-content-id="<%= link.content_id%>" class="link-slide content_id-<%= link.content_id%> " href="<%= link.url%>"><%= link.title %></a>
+        <% end %>
       <% end %>
-    <% end %>
-        <h3><%= content.title %></h3>
-        <h3><%= content.category %></h3>
-        <img src="<%= content.url %>" >
-        <button class="stumble-next" onClick="$('.content-slide.active').toggleClass('active').toggleClass('hidden').next().toggleClass('active').toggleClass('hidden');"></button>
-        <%= link_to 'Show', content %>
-        <%= link_to 'Edit', edit_content_path(content) %>
-        <%= link_to 'Destroy', content, method: :delete, data: { confirm: 'Are you sure?' } %>
-      </div>
-    <% end %>
+          <h3><%= content.title %></h3>
+          <h3><%= content.category %></h3>
+          <img src="<%= content.url %>" >
+    </div>
+          <div class="col-xs-6">
+            
+          <button class="stumble-next" onClick="$('.content-slide.active').toggleClass('active').toggleClass('hidden').next().toggleClass('active').toggleClass('hidden');"></button>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
 </table>
 
 <br>
 
-<%= link_to 'New Content', new_content_path %>
 <script>
   $(document).ready(function(){
     $('.content-slide:first').toggleClass('active').toggleClass('hidden');
