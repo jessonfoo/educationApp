@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'home/index'
+
   root 'contents#index'
   resources :links
   resources :contents
