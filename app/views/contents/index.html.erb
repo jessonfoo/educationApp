@@ -17,7 +17,7 @@
         <h3><%= content.title %></h3>
         <h3><%= content.category %></h3>
         <img src="<%= content.url %>" >
-        <button onClick="$('.content-slide.active').toggleClass('active').toggleClass('hidden').next().toggleClass('active').toggleClass('hidden');">next</button>
+        <button class="stumble-next" onClick="$('.content-slide.active').toggleClass('active').toggleClass('hidden').next().toggleClass('active').toggleClass('hidden');">next</button>
         <%= link_to 'Show', content %>
         <%= link_to 'Edit', edit_content_path(content) %>
         <%= link_to 'Destroy', content, method: :delete, data: { confirm: 'Are you sure?' } %>
@@ -37,3 +37,8 @@
     $('.content-slide:first').toggleClass('active').toggleClass('hidden');
   })
 </script>
+<style>
+button.stumble-next{
+  background:url('/images/button-small.png');
+}
+</style>
