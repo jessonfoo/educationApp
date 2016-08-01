@@ -29,7 +29,7 @@
 <br>
 
     <% @links.each do |link| %>
-      <a href="<%= link.url%>"><%= link.title %></a>
+      <a class="content_id-<%= link.content_id%> " href="<%= link.url%>"><%= link.title %></a>
     <% end %>
 <%= link_to 'New Content', new_content_path %>
 <script>
@@ -39,6 +39,11 @@
 </script>
 <style>
 button.stumble-next{
-  background:url('/images/button-small.png');
+  background: url('/images/button-small.png');
+  height: 137px;
+  width: 200px;
+  border: none;
+  color: white;
+}
 }
 </style>
