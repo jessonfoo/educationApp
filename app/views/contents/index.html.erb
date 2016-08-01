@@ -12,7 +12,7 @@
   </thead>
 
   <tbody>
-    <% @contents.each do |content| %>
+    <% @contents.shuffle.each do |content| %>
       <tr>
         <td><%= content.title %></td>
         <img src="<%= content.url %>" >
