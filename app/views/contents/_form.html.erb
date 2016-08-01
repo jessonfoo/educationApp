@@ -17,6 +17,11 @@
   </div>
 
   <div class="field">
+    <%= f.label :category %>
+    <%= f.select :category, ['reproduction', 'puberty','relationships','LGBT'] %>
+  </div>
+
+  <div class="field">
     <%= f.hidden_field :url%>
   </div>
 

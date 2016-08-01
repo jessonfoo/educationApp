@@ -58,11 +58,4 @@ class ContentsController < ApplicationController
     def content_params
       params.require(:content).permit!
     end
-    # def set_link
-    #   @link = Link.find(params[:id])
-    # end
-    #
-    # def link_params
-    #   params.require(:link).permit!
-    # end
 end
