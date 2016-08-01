@@ -1,0 +1,176 @@
+/* line 5, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/contents.scss */
+.content-slide.hidden {
+  display: none;
+}
+/* line 8, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/contents.scss */
+.content-slide.active {
+  display: inline-block;
+}
+/* line 4, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/home.scss */
+body {
+  background: #95D1FB;
+}
+
+/* line 8, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/home.scss */
+h1 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 200px;
+}
+
+/* line 15, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/home.scss */
+span {
+  color: #B7612C;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+/* line 20, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/home.scss */
+#para {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-left: 250px;
+  color: #1B78C8;
+}
+
+/* line 28, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/home.scss */
+a {
+  color: #FFF;
+}
+/* line 31, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/home.scss */
+a:hover {
+  text-decoration: none;
+  border-style: none;
+}
+/* line 1, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 10, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+}
+
+/* line 35, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 46, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 51, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 55, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 61, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 69, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 80, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 86, /Users/Jesson/Documents/educationApp/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+ body {
+   background: #95D1FB
+ }
+
+ a {
+   color: #FFF;
+
+   &:hover {
+     text-decoration: none;
+   }
+ }
